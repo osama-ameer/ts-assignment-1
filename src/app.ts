@@ -13,7 +13,6 @@ interface User {
   
   const renderTable = async (): Promise<void> => {
     const data = await fetchData();
-    console.log(data);
     const table = document.getElementById('table_body')! as HTMLElement;
     
 
