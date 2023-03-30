@@ -15,7 +15,6 @@ const fetchData = () => __awaiter(void 0, void 0, void 0, function* () {
 });
 const renderTable = () => __awaiter(void 0, void 0, void 0, function* () {
     const data = yield fetchData();
-    console.log(data);
     const table = document.getElementById('table_body');
     data.map((item) => {
         const row = document.createElement('tr');
@@ -25,7 +24,7 @@ const renderTable = () => __awaiter(void 0, void 0, void 0, function* () {
         const phone = document.createElement('td');
         id.textContent = item.id.toString();
         name.textContent = item.name;
-        email.textContent = item.email.toString();
+        email.textContent = item.email;
         phone.textContent = item.phone.toString();
         row.appendChild(id);
         row.appendChild(name);

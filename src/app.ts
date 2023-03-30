@@ -1,4 +1,4 @@
-interface User {
+type User ={
     id: number;
     name: string;
     email: string;
@@ -26,7 +26,7 @@ interface User {
 
     id.textContent = item.id.toString();
     name.textContent = item.name;
-    email.textContent = item.email.toString();
+    email.textContent = item.email;
     phone.textContent = item.phone.toString();
 
     row.appendChild(id);
